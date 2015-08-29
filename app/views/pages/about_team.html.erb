@@ -6,7 +6,7 @@
   <title>About whyVOTE Team</title>
 
 </head>
-
+<style>body {background-color: #000}</style>
 <body>
 
 <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.3.2/jquery.min.js"></script>
@@ -35,38 +35,52 @@
     <ul class="small-block-grid-1 medium-block-grid-2 large-block-grid-2">
       <li id ="mavis">
         <div class="about-image">
-          <img src="https://fbcdn-profile-a.akamaihd.net/hprofile-ak-xpt1/v/t1.0-1/c72.29.576.576/11221772_10155705111515317_8331162300376917323_n.jpg?oh=bd34598affeb9dc5f944b4713131e3ee&oe=5626262E&__gda__=1445588267_5e767ef5b600a57a9a2b59b1f9ce53b1"/><h4>Mavis Chan</h4><h5><i>Founder and CEO</i></h5>
+          <img src="<%= asset_path 'mavis.jpg' %>" />
+          <h4>Mavis Chan</h4><h5><i>Founder and CEO</i></h5>
         </div>
         <div class="about-us">
-          Mavis founded whyVOTE in May of 2015 due to a passion for bridging the gap between youth and politics. She brings experience in marketing and engagement, social and economic policy, and is responsible for overseeing the strategic goals for whyVOTE. Mavis is in 4A Environment and Business.
+          Mavis founded whyVOTE in May of 2015 due to a passion for bridging the gap between youth and politics.
+          She brings experience in marketing and engagement, social and economic policy,
+          and is responsible for overseeing the strategic goals for whyVOTE. Mavis is in 4A Environment and Business,
+          and in her spare time enjoys writing and analyzing people.
         </div>
       </li>
 
       <li id ="madigan">
         <div class="about-image">
-          <img src="http://ibin.co/28wx2LUdY48l"/><h4>Madigan Kim</h4><h5><i>Technical project lead</i></h5>
-
+          <img src="<%= asset_path 'madigan.jpg' %>" />
+          <h4>Madigan Kim</h4><h5><i>Technical project lead</i></h5>
         </div>
         <div class="about-us">
-          Madigan description description description description description description description description description description description description description description description description description description. Madigan is in 3B Computer Science.
+          Madigan is in the midst of completing her Computer Science degree at the University of Waterloo.
+          She has dabbled in iOS programming, full-stack web development, and user interface design.
+          As technical project lead of whyVOTE, she puts her experiences to use and manages the whyVOTE dev team.
+          When not coding, Madigan enjoys crossword puzzles, programming blogs, and playing violin when no one is around.
         </div>
       </li>
 
       <li id="mike">
         <div class="about-image">
-          <img src="https://scontent.xx.fbcdn.net/hphotos-xaf1/v/t1.0-9/11071130_850304695040602_4346672818457271349_n.jpg?oh=83c91591e5979b95f634b92118bd47ad&oe=561C1BE6"/><h4>Mike Starr</h4><h5><i>Front end developer</i></h5>
+          <img src="<%= asset_path 'mike.jpg' %>" />
+          <h4>Mike Starr</h4><h5><i>Front end developer</i></h5>
         </div>
         <div class="about-us">
-          Mike description description description description description description description description description description description description description description description description description description. Mike is in 2A Management Engineering.
+          Mike is a second year Management Engineering student at the University of Waterloo.
+          In the process of designing and building the whyVOTE website, he was able to educate himself on Canadian
+          politics in the process, which has always been an area of great interest for him.
         </div>
       </li>
 
       <li id="ashley">
         <div class="about-image">
-          <img src="https://scontent.xx.fbcdn.net/hphotos-xat1/v/t1.0-9/10857868_10152939618373841_4893048923245108979_n.jpg?oh=b75f6e6fa1150a06404068396509eadb&oe=560F01E2"/><h4>Ashley Wu</h4><h5><i>Front end developer</i></h5>
+          <img src="<%= asset_path 'ashley.jpg' %>" />
+          <h4>Ashley Wu</h4><h5><i>Front end developer</i></h5>
         </div>
         <div class="about-us">
-          Ashley description description description description description description description description description description description description description description description description description description. Ashley is in 2A Mechanical Engineering.
+          Ashley is a second year Mechanical Engineering student at the University of Waterloo,
+          seeking to increase youth engagement in Canadian politics. She dpes front end development for the whyVOTE website.
+          Ashley hopes that the student-centric community of whyVOTE can encourage voting turnout.
+          Her interests include discovering new music, reading, and eating.
         </div>
       </li>
     </ul>

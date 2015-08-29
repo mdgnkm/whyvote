@@ -3,7 +3,7 @@
     margin: auto;
     text-align: justify;
     color: #fff;
-    position: static;
+    position: absolute;
     font-size:1rem;
     font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, sans-serif;
     a{color: #fff;}
@@ -109,7 +109,7 @@
 
 .about-us, .about-us span{
     color: white;
-    text-align: justify;
+    text-align: left;
     line-height:1rem;
 }
 
@@ -130,6 +130,7 @@
     margin-left: -13rem;
     text-align: right;
     font-size: 1rem;
+    z-index: 100;
 }
 
 #about-sidebar a{

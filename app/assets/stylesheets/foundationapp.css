@@ -1162,7 +1162,7 @@ button, .button {
     text-align: center;
     text-decoration: none;
     display: inline-block;
-    padding: 1% 0.1% 1% 1%;
+    padding: 4px 6px 4px 6px;
     background-color: #c0c0c0;
     border-color: #eee;
     color: #000;
