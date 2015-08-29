@@ -20,8 +20,8 @@ Thumbs.db
 
 # IDE files for whyvote #
 ######################
-whyvote/.idea/*
-whyvote/tmp/*
-whyvote/bundle/*
-whyvote/.bundle/*
-whyvote/vendor/*
+.idea/*
+tmp/*
+bundle/*
+.bundle/*
+vendor/*
