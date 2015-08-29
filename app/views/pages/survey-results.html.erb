@@ -1,0 +1,313 @@
+<head>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+
+  <script>
+      $(document).ready(function(){
+          $("#partyPic1").hide();
+          $("#partyPic2").hide();
+          $("#partyPic3").hide();
+          $("#partyPic4").hide();
+          $("#partyPic5").hide();
+          $("#partyStances").hide();
+
+          $("#partyColour1").mouseover(function(){
+              $("#partyPic1").show();
+              $("#partyChoice1").hide();
+          });
+          $("#partyColour1").mouseout(function(){
+              $("#partyPic1").hide();
+              $("#partyChoice1").show();
+          });
+          $("#partyColour2").mouseover(function(){
+              $("#partyPic2").show();
+              $("#partyChoice2").hide();
+          });
+          $("#partyColour2").mouseout(function(){
+              $("#partyPic2").hide();
+              $("#partyChoice2").show();
+          });
+          $("#partyColour3").mouseover(function(){
+              $("#partyPic3").show();
+              $("#partyChoice3").hide();
+          });
+          $("#partyColour3").mouseout(function(){
+              $("#partyPic3").hide();
+              $("#partyChoice3").show();
+          });
+          $("#partyColour4").mouseover(function(){
+              $("#partyPic4").show();
+              $("#partyChoice4").hide();
+          });
+          $("#partyColour4").mouseout(function(){
+              $("#partyPic4").hide();
+              $("#partyChoice4").show();
+          });
+          $("#partyColour5").mouseover(function(){
+              $("#partyPic5").show();
+              $("#partyChoice4").hide();
+          });
+          $("#partyColour5").mouseout(function(){
+              $("#partyPic5").hide();
+              $("#partyChoice4").show();
+          });
+
+          var expanded = false;
+          $("#partyStanceButton").click(function()
+          {
+              if (!expanded)
+              {
+                  $("#partyStances").show(500);
+                  expanded = true;
+              }
+              else
+              {
+                  $("#partyStances").hide(500);
+                  expanded = false;
+              }
+          });
+
+      });
+  </script>
+
+  <title>Survey Results</title>
+</head>
+
+<body>
+
+
+<div class="large-8 medium-8" style="margin: auto;">
+  <fieldset style="border: 1px solid black; padding: none;">
+    <legend>SURVEY RESULTS</legend>
+    <div class="large-12" style="margin-top: 0rem;">
+      <ul class="pricing-table active-tb shadow mrgn-20-top">
+        <li class="title">My Survey Results</li>
+        <li class="bullet-item">
+          <div style="width: 100%; ">
+            <h5>Political Survey for the 2015 Federal Election</h5>
+            <hr style="width: 45%; margin: auto; border-color: black;">
+
+            <ul class="small-block-grid-3">
+              <li>
+                <div style="font-size: 0.75rem; text-align: center; display: inline-block; line-height:1rem;">
+                  <div class="political-measure smallest" style="border-color: sandybrown; margin: 0.5rem;">
+                    </br>54%
+                    <h6></br></br>
+                                            <span style="text-shadow: 1px 1px 1px #fff, 1px 1px 0px #000; font-size: 0.7rem; ">
+                                                NDP
+                                            </span>
+                    </h6>
+                  </div>
+
+                  <div class="political-measure smallest" style="border-color: lightcoral; margin: 0.5rem;">
+                    </br>48%
+                    <h6></br></br>
+                                            <span style="text-shadow: 1px 1px 1px #fff, 1px 1px 0px #000; font-size: 0.7rem; ">
+                                                Liberal
+                                            </span>
+                    </h6>
+                  </div>
+
+                  <div class="political-measure smallest" style="border-color: #2f8731; margin: 0.5rem;">
+                    </br>36%
+                    <h6></br></br>
+                                            <span style="text-shadow: 1px 1px 1px #fff, 1px 1px 0px #000; font-size: 0.7rem; ">
+                                                Green
+                                            </span>
+                    </h6>
+                  </div>
+
+                  <div class="political-measure smallest" style="border-color: cornflowerblue; margin: 0.5rem;">
+                    </br>23%
+                    <h6></br></br>
+                                        <span style="text-shadow: 1px 1px 1px #fff, 1px 1px 0px #000; font-size: 0.7rem; ">
+                                            Conservative
+                                        </span>
+                    </h6>
+                  </div>
+
+
+                </div>
+              </li>
+
+              <li>
+                <div style="font-size: 0.75rem; line-height: 1rem; margin-top:2em;">
+                  Your views align most closely with:</br></br>
+                  <div class="political-measure big" style="line-height: 6.5rem; margin-bottom: 1rem;">
+                    76%
+                  </div>
+                  <h5 style="text-shadow: 1px 1px 1px #fff, 1px 1px 0px #000;">Liberatarian</h5>
+                  <span style="text-align: center;">See completed survey. </br><a href="#">Review results >></a></span>
+                </div>
+              </li>
+
+              <li style="margin-top: 2em; font-size: 0.75rem;">
+                You align on the following issues:</br></br>
+                <ul  style="font-size: 0.9rem;">
+                  <li><a href="#">Combatting Climate Change</a></li></br>
+                  <li><a href="#">Combatting Terrorist Threats</a></li></br>
+                  <li><a href="#">Employment and Skills Training</a></li></br>
+                  <li><a href="#">Post-Secondary Education</a></li>
+                </ul>
+              </li>
+            </ul>
+
+
+          </div>
+        </li>
+      </ul>
+    </div>
+    <div class="large-12" style="margin-top: 2rem;">
+      <ul class="pricing-table active-tb shadow mrgn-20-top">
+        <li class="title">Which political party do you align with the most?</li>
+        <li class="bullet-item">
+          <h4>
+                        	<span style="font-size:2rem; text-shadow: 1px 1px 0 #fff, 2px 2px 0 #999;">1   
+                        	</span>
+            Should Canada keep troops in Iraq for the anti-ISIS mission?
+          </h4>
+          <button id="partyStanceButton" style="margin-left:-60%;">
+            View Party Stances
+          </button>
+
+          <div id="partyStances">
+            <div class="liberal clearfix" style="margin-bottom:1.2rem;">
+              <div class="large-2 medium-4 small-5 left">
+                <img src="https://upload.wikimedia.org/wikipedia/en/thumb/c/c4/Liberal_Party_of_Canada_Logo.svg/220px-Liberal_Party_of_Canada_Logo.svg.png" width="65%;">
+              </div>
+
+              <div class="large-10 medium-8 small-7 right" style="text-align: justify;">
+                The Liberal Party opposes military action in Iraq such as airstrikes, but would like Canadian troops to continue training and helping Iraqi soldiers.
+              </div>
+            </div>
+
+            <div class="conservative clearfix" style="margin-bottom:1.2rem;">
+              <div class="large-2 medium-4 small-5 left">
+                <img src="https://donate.conservative.ca/cms-resources/public/logo_en.gif" width="100%;">
+              </div>
+
+              <div class="large-10 medium-8 small-7 right" style="text-align: justify;">
+                The Conservative Party fully supports Canada's involvement in Iraq in the fight against ISIS.
+              </div>
+            </div>
+
+            <div class="NDP clearfix" style="margin-bottom:1.2rem;">
+              <div class="large-2 medium-4 small-5 left">
+                <img src="http://www.spirit-wrestlers.com/photos/2006_Our_Way_Home/NDP_logo.gif" width="80%;">
+              </div>
+
+              <div class="large-10 medium-8 small-7 right" style="text-align: justify;">
+                The New Democratic Party also opposes military action in Iraq, but would like Canada to provide humanitarian aid.
+              </div>
+            </div>
+
+            <div class="Green clearfix" style="margin-bottom:1.2rem;">
+              <div class="large-2 medium-4 small-5 left">
+                <img src="http://www.greenparty.ca/sites/default/files/logo_green_160_en_0.png" width="80%;">
+              </div>
+
+              <div class="large-10 medium-8 small-7 right" style="text-align: justify;">
+                The Green Party seems to have taken a neutral stance regarding Canada's involvement in Iraq, but believes that belonging to an organization such as ISIS is not a crime, as freedom of speech is a human right.
+              </div>
+            </div>
+
+            <div class="BQ clearfix">
+              <div class="large-2 medium-4 small-5 left">
+                <img src="http://totheendsoftheearth.ca/wp-content/uploads/2014/12/b_logo.jpg" width="80%;">
+              </div>
+
+              <div class="large-10 medium-8 small-7 right" style="text-align: justify;">
+                The Bloc Quebecois seems to have also taken a neutral stance, despite their website having been hacked by an organization calling itself the United Islamic Cyber Force.
+              </div>
+            </div>
+
+
+
+          </div>
+
+          <div id="resultDescription" style="margin: auto; width: 80%;">
+            </br>
+            <div class="clearfix">
+              <div class="small-2 left">
+                <span style="font-size:1.3rem;">A)</span>
+                <div id="partyColour1" style="display: inline-block; height: 2rem; width: 2rem; background: #333399; margin-right: 1rem; vertical-align: middle;"></div>
+
+              </div>
+
+              <div class="small-10 right" style="text-align: justify;">
+
+                <img id="partyPic1" src="https://donate.conservative.ca/cms-resources/public/logo_en.gif" style="height: 3.1rem; padding: 0.125rem;">
+                <label class="button" id="partyChoice1" style="width: 100%; background: #D83431; text-align: left;">
+                  Yes, we should keep troops in Iraq
+                </label>
+              </div>
+            </div>
+
+            <div class="clearfix">
+              <div class="small-2 left">
+                <span style="font-size:1.3rem;">B)</span>
+                <div id="partyColour2" style="display: inline-block; height: 2rem; width: 2rem; background: #ff6600; margin-right: 1rem; vertical-align: middle;"></div>
+              </div>
+
+              <div class="small-10 right" style="text-align: justify;">
+
+                <img id="partyPic2" src="http://www.spirit-wrestlers.com/photos/2006_Our_Way_Home/NDP_logo.gif" style="height: 3.1rem; padding: 0.6rem; margin-top: 0rem;">
+                <label class="button" id="partyChoice2" style="width: 100%; background: #D83431; text-align: left;">
+                  No, we should pull all troops out but we should continue to provide humanitarian aid
+                </label>
+              </div>
+            </div>
+
+            <div class="clearfix">
+              <div class="small-2 left">
+                <span style="font-size:1.3rem;">C)</span>
+                <div id="partyColour3" style="display: inline-block; height: 2rem; width: 2rem; background: #D71920; margin-right: 1rem; vertical-align: middle;"></div>
+              </div>
+
+              <div class="small-10 right" style="text-align: justify;">
+
+                <img id="partyPic3" src="https://upload.wikimedia.org/wikipedia/en/thumb/c/c4/Liberal_Party_of_Canada_Logo.svg/220px-Liberal_Party_of_Canada_Logo.svg.png" style="height: 3.1rem; padding: 0.6rem; margin-top: 0rem;">
+                <label class="button" id="partyChoice3" style="width: 100%; background: #D83431; text-align: left;">
+                  No, we should pull all troops out but we should continue to provide military aid
+                </label>
+              </div>
+            </div>
+
+            <div class="clearfix">
+              <div class="small-2 left">
+                <span style="font-size:1.3rem;">D)</span>
+                <div id="partyColour4" style="display: inline-block; height: 2rem; width: 1rem; background: #2F873E; vertical-align: middle;"></div>
+                <div id="partyColour5" style="display: inline-block; height: 2rem; width: 1rem; background: #02AFF3; margin-right:1rem; vertical-align: middle;"></div>
+
+              </div>
+
+              <div class="small-10 right" style="text-align: justify;">
+
+                <img id="partyPic4" src="http://www.greenparty.ca/sites/default/files/logo_green_160_en_0.png" style="height: 3.1rem; padding: 0.9rem;">
+                <img id="partyPic5" src="http://totheendsoftheearth.ca/wp-content/uploads/2014/12/b_logo.jpg" style="height: 3.1rem; padding: 0.9rem;">
+                <label class="button" id="partyChoice4" style="width: 100%; background: #D83431; text-align: left;">
+                  Neutral
+                </label>
+              </div>
+            </div>
+
+
+
+
+
+          </div>
+        </li>
+      </ul>
+    </div>
+  </fieldset>
+</div>
+
+
+
+
+
+
+
+
+
+
+

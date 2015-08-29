@@ -1,0 +1,7 @@
+<p id="notice"><%= notice %></p>
+
+<p>Name: <%= @team.name %></p>
+<p>Captain: <%= link_to @team.captain.full_name, user_path(@team.captain) %></p>
+
+<%= link_to 'Edit', edit_team_path(@team) %> |
+<%= link_to 'Back', teams_path %>

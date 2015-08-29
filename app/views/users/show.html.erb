@@ -1,0 +1,8 @@
+<h3><%= @user.full_name %></h3>
+
+<% if current_user == @user %>
+    <%= link_to "Change account settings", edit_user_registration_path %>
+<% end %>
+
+<p>Name: <%= @user.full_name %></p>
+<p>Email: <%= @user.email if @user.email %></p>

@@ -1,0 +1,35 @@
+<% if user_signed_in? %>
+    <!--<%= link_to('Logout', destroy_user_session_path, :method => :delete) %>-->
+
+<% else %>
+    <%= form_for(:user, :url => session_path(:user)) do |f| %>  <a class="navbar-elem right-align" data-method='delete' href="<%= destroy_user_session_path %>">Logout</a>
+
+        <style>
+
+        </style>
+
+        <head>
+          <title>Example page</title>
+        </head>
+
+        <body>
+        <div class="home-background">
+          <div class="large-6-home">
+            <img src="<%= asset_path 'Whyvote_logo_transparent.png' %>" width="60%"/>
+            </br></br>
+    <span style="font-size: 1rem;">
+      Find out which party you align with for the 2015 Federal Election.</br>
+      Compare with friends.</span><br></br>
+            <div class="login">
+              <%= f.text_field :email, :placeholder => "Email", :class => "login", :style => "margin-bottom:1rem" %>
+              <%= f.password_field :password, :placeholder => "Password", :class =>"login", :style => "margin-bottom:1rem" %>
+              <%= f.submit 'Login', :class => "login_button" %>
+            </div>
+            <br>
+            <%= link_to "Sign in with Facebook", user_omniauth_authorize_path(:facebook) %> </br>
+            <%= link_to "Don't have an account? Sign up!", new_user_registration_path %>
+          </div>
+        </div>
+        </body>
+    <% end %>
+<% end %>

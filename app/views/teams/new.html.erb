@@ -1,0 +1,29 @@
+<h1>New Team</h1>
+
+<fieldset id="bigscreen">
+  <legend>Create a team</legend>
+  <div id="photo">
+    <p id="placeholder">Add a photo</p>
+  </div>
+  <h2 id="UW">University of Waterloo</h2>
+  <div class="middle">
+    <label>Team Name*</label><br>
+    <input class="fields" type="text" maxlength="70" placeholder="Check if the name is available."></input>
+  </div>
+  <div class="middle">
+    <p>Team name is available</p>
+  </div>
+  <div class="middle">
+    <label>Members</label><br>
+    <input class="fields" type="text" maxlength="70" placeholder="Who do you want to add to the group? (Add up to 9 members)"></input>
+  </div>
+  <div class="middle">
+    <label>Description</label><br>
+    <textarea class="fields" id="description" type="text" placeholder="What is this team about?"></textarea>
+  </div>
+  <button class="middle">Confirm</button>
+  <button>Cancel</button>
+  </div>
+</fieldset>
+
+<%= link_to 'Back', teams_path %>

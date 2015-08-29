@@ -1,0 +1,115 @@
+.political-measure {
+    margin: auto;
+    -moz-border-radius: 50%;
+    -webkit-border-radius: 50%;
+    border-radius: 50%;
+    background: transparent;
+    box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5), inset 2px 2px 4px rgba(0, 0, 0, 0.5);
+    -webkit-box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5), inset 2px 2px 4px rgba(0, 0, 0, 0.5);
+    -moz-box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5), inset 2px 2px 4px rgba(0, 0, 0, 0.5);
+    text-shadow: 2px 2px 1px #fff, 2px 2px 2px #000;
+    display: inline-block;
+}
+
+.big {
+    width: 7.5rem;
+    height: 7.5rem;
+    border: 0.5rem solid blue;
+    font-size: 2.5rem;
+    line-height: 1.5rem;
+}
+
+.small {
+    width: 5rem;
+    height: 5rem;
+    border: 0.4rem solid;
+    font-size: 1.5rem;
+    line-height: 1.2rem;
+    margin-bottom: 2rem;
+}
+
+.smallest {
+    width: 4.5rem;
+    height: 4.5rem;
+    border: 0.4rem solid;
+    font-size: 1.2rem;
+    line-height: 1.3rem;
+    text-align: center;
+}
+
+.friend-pic {
+    font-size: 0.9rem;
+    line-height: 1.2rem;
+    display: inline-block;
+span {
+    vertical-align: middle;
+    text-align: left;
+    margin-right: 1rem;
+    width: 9rem;
+}
+img {
+    width: 7rem;
+    height: auto;
+    border-radius: 5%;
+    -moz-border-radius: 5%;
+    -webkit-border-radius: 5%;
+    margin-right: 0.5rem;
+}
+}
+
+#navBar {
+    height: 1.5rem;
+    margin-left: 1rem;
+    width: 100%;
+    text-align: left;
+    display: inline-block;
+form {
+    display: inline-block;
+}
+}
+
+#searchBox {
+    background: #fff;
+    border: 1px solid #eee;
+    box-shadow: 0 0 1px #000000 inset;
+    color: #1f1f1f;
+    font-size: 0.8rem;
+    height: 1.7rem;
+    padding: .2rem .2rem .2rem 1.5rem;
+    width: 15rem;
+    display: inline-block;
+    margin-left: .5rem;
+}
+
+::-webkit-input-placeholder {
+    color: #727272;
+}
+
+:-moz-placeholder, ::-moz-placeholder {
+    color: #727272;
+    opacity: 1;
+}
+
+:-ms-input-placeholder {
+    color: #727272;
+}
+
+#enterInfo {
+    background: #fff;
+    border: 1px solid #eee;
+    box-shadow: 0 0 1px #000000 inset;
+    color: #1f1f1f;
+    height: 1.3rem;
+    line-height: 1.3rem;
+    width: 100%;
+    display: inline-block;
+}
+
+.bullet-item form label {
+    width: 7rem;
+    display: inline-block;
+    vertical-align: top;
+&:hover {
+     cursor: default;
+ }
+}

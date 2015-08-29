@@ -1,0 +1,31 @@
+<head>
+  <title>Example page</title>
+</head>
+
+<body>
+<div class="home-background">
+  <div class="large-6-home">
+    <img src="<%= asset_path 'Whyvote_logo_transparent.png' %>" width="60%"/>
+    </br></br>
+    <button href="#" class="facebook button split"> <span></span>sign in with facebook</button></br>
+    <span style="font-size: 0.9rem;">Or sign up with your email address</span><br></br>
+    <div class="login">
+      <%= form_for(resource, as: resource_name, url: registration_path(resource_name)) do |f| %>
+          <%= devise_error_messages! %>
+
+          <%= f.text_field :first_name, :class => "login", :placeholder => "First name" %>
+          <%= f.text_field :last_name, :class => "login", :placeholder => "Last name" %>
+          <%= f.text_field :email, :class => "login", :placeholder => "Email" %>
+          <% if @minimum_password_length %>
+              <em>(<%= @minimum_password_length %> characters minimum)</em>
+          <% end %><br />
+          <%= f.password_field :password, :class => "login", :placeholder => "Password", autocomplete: "off" %>
+          <%= f.password_field :password_confirmation, :class => "login", :placeholder => "Re-enter your password",autocomplete: "off" %>
+          <%= f.submit "Sign up", :class => "login_button" %>
+
+      <% end %>
+
+    </div>
+  </div>
+</div>
+</body>

@@ -1,0 +1,116 @@
+
+<head>
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+
+
+  <script>
+      $(document).ready(function(){
+          $("#read-more-target, #read-more-text").hide();
+          var expanded = false;
+          $("#moveButton").click(function()
+          {
+              if (!expanded)
+              {
+                  $("#translation").animate({'marginTop' : '0px'}, {duration : 500});
+                  $("#read-more-target, #read-more-text").show(500);
+                  expanded = true;
+              }
+              else
+              {
+                  $("#translation").animate({'marginTop' : '0'}, {duration : 500});
+                  $("#read-more-target, #read-more-text").hide(500);
+                  expanded = false;
+              }
+          });
+      });
+  </script>
+
+  <title>Survey Page</title>
+</head>
+
+<body>
+
+<div class="large-8 medium-8" style="margin: auto; margin-top: 2rem;">
+  <fieldset style="border: 1px solid black; padding: none;">
+    <legend>SURVEY</legend>
+    <div class="large-12 columns">
+      <ul class="pricing-table active-tb shadow mrgn-20-top" style="margin-top:3rem;">
+        <li class="title">Which political party do you align with most?</li>
+        <li class="bullet-item">
+          <h4 style="background: #ccc; display: inline-block; padding: 0.5rem 1rem 0.5rem 6rem; text-align: right; position: absolute; left: 0; box-shadow:0px 1px 0px 1px grey; text-shadow: 1px 1px 0 #fff, 2px 2px 0 #999;">Military Issues</h4></br>
+        </li>
+        <li class="bullet-item">
+          <h4>
+            1. Should Canada keep troops in Iraq for the anti-ISIS mission?                         </h4>
+          <div style="width: 80%; margin: auto;">
+
+            <input type="checkbox" class="read-more-state" id="post-1"/>
+            <label id="moveButton" for="post-1" class="read-more-trigger" style="position: relative; margin-left: -85%;"></label>
+            <p class="read-more-wrap" id="read-more-text">
+                                    <span class="read-more-target">ISIS (The Islamic State in Iraq and Syria) is a militant group that advocates radical interpretations of Islam and claims religious authority over all Muslims. It is known for persecuting minorities, carrying out atrocities against children, women and men, as well as religious and ethnic communities in Iraq.<br><br>Canada currently provides airforce personnel, planning and liaison with coalition partners, and $128 million towards missions.<br><br>Some argue that it is necessary for the government to continue at its current level of involvement in stopping ISIS with coalition partners. But this means putting the lives of Canadian troops at risk and opportunity cost of resources that could be allocated elsewhere.
+                                    </span>
+            </p>
+            <div id="translation" style="width: 100%;">
+              <div style="text-align: left; width:100%; margin: 1rem 0;">
+                <span style="font-size: 1.375rem;">A)  </span>
+                <input type="radio" name="aa-group" id="aa1" data-toggle="button">
+                <label class="button" for="aa1" style="width: calc(100% - 3.5rem);">Yes</label>
+              </div>
+              <div style="text-align: left; width:100%; margin: 1rem 0;">
+                <span style="font-size: 1.375rem;">B)  </span>
+                <input type="radio" name="aa-group" id="aa2" data-toggle="button">
+                <label class="button" for="aa2" style="width: calc(100% - 3.5rem); ">No, we should pull all troops out but we should continue to provide humanitarian aid</label>
+              </div>
+              <div style="text-align: left; width:100%; margin: 1rem 0;">
+                <span style="font-size: 1.375rem;">C)  </span>
+                <input type="radio" name="aa-group" id="aa3" data-toggle="button">
+                <label class="button" for="aa3" style="width: calc(100% - 3.5rem);">No, we should pull all troops out but we should continue to provide military aid</label>
+              </div>
+              <div style="text-align: left; width:100%; margin: 1rem 0;">
+                <span style="font-size: 1.375rem;">D)  </span>
+                <input type="radio" name="aa-group" id="aa4" data-toggle="button">
+                <label class="button" for="aa4" style="width: calc(100% - 3.5rem);">Neutral</label>
+              </div>
+            </div>
+            </br>
+
+            <div class="large-2 middle-2 columns" style="vertical-align: middle; margin-left: -1rem;">
+              <h5 style="padding:0.2rem;">Importance:</h5>
+            </div>
+            <div class="large-10 middle-10 columns" style="vertical-align: middle;">
+              <ul class="button-group round even-5" style="vertical-align: middle; ">
+                <li><a href="#" class="button" for="a1">1</a></li>
+                <li><a href="#" class="button" for="a2">2</a></li>
+                <li><a href="#" class="button" for="a3">3</a></li>
+                <li><a href="#" class="button" for="a4">4</a></li>
+                <li><a href="#" class="button" for="a5">5</a></li>
+              </ul>
+              <ul class="small-block-grid-5" style="margin-top: -0.8rem; font-size: 0.9em;">
+                <li>Least</li>
+                <li></li>
+                <li></li>
+                <li></li><li>Most</li>
+              </ul>
+            </div>
+          </div>
+
+        </li>
+        <li class="bullet-item clearfix">
+          <div class="large-5 medium-11 small-12 right">
+            <select style="width:50%;">
+              <option>Share results with</option>
+              <option>Public</option>
+              <option>Friends</option>
+              <option>Only Me</option>
+            </select>
+            <button style="width: 35%;">
+              Show Results
+            </button>
+          </div>
+        </li>
+      </ul>
+    </div>
+  </fieldset>
+</div>
+</body>

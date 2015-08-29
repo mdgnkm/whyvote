@@ -1,0 +1,438 @@
+<head>
+  <title>Home - Logged in</title>
+
+  <script type="text/javascript" src="https://www.google.com/jsapi"></script>
+  <script type="text/javascript">
+      google.load("visualization", "1", {packages:["corechart"]});
+      google.setOnLoadCallback(drawBigChart);
+      google.setOnLoadCallback(drawNDPChart);
+      google.setOnLoadCallback(drawLiberalChart);
+      google.setOnLoadCallback(drawGreenChart);
+      google.setOnLoadCallback(drawConservativeChart);
+      google.setOnLoadCallback(drawfriend1Chart);
+      google.setOnLoadCallback(drawfriend2Chart);
+      google.setOnLoadCallback(drawfriend3Chart);
+      google.setOnLoadCallback(drawfriend4Chart);
+
+      function drawBigChart() {
+          var data = google.visualization.arrayToDataTable([
+              ['Party', 'Percentage'],
+              ['',      24],
+              ['Liberatarian',     76],
+          ]);
+
+          var options = {
+              legend: 'none',
+              pieSliceText: 'none',
+              pieStartAngle: 0,
+              pieHole: 0.85,
+              backgroundColor: 'transparent',
+              pieSliceBorderColor: 'lightgrey',
+              slices: {
+                  0: { color: 'lightgrey', },
+                  1: { color: 'blue' },
+              },
+              tooltip: {
+                  text: 'percentage',
+                  trigger: 'none'
+              },
+              chartArea: {width:'85%', height:'85%'},
+          };
+
+          var chart = new google.visualization.PieChart(document.getElementById('BigChart'));
+          chart.draw(data, options);
+      }
+
+      function drawNDPChart() {
+          var data = google.visualization.arrayToDataTable([
+              ['Party', 'Percentage'],
+              ['',      46],
+              ['NDP',     54],
+          ]);
+
+          var options = {
+              legend: 'none',
+              pieSliceText: 'none',
+              pieStartAngle: 0,
+              pieHole: 0.85,
+              backgroundColor: 'transparent',
+              pieSliceBorderColor: 'lightgrey',
+              slices: {
+                  0: { color: 'lightgrey', },
+                  1: { color: '#FF6600' },
+              },
+              tooltip: {
+                  text: 'percentage',
+                  trigger: 'none'
+              },
+              chartArea: {width:'85%', height:'85%'},
+          };
+
+          var chart = new google.visualization.PieChart(document.getElementById('NDPChart'));
+          chart.draw(data, options);
+      }
+
+      function drawLiberalChart() {
+          var data = google.visualization.arrayToDataTable([
+              ['Party', 'Percentage'],
+              ['',      52],
+              ['Liberal',     48],
+          ]);
+
+          var options = {
+              legend: 'none',
+              pieSliceText: 'none',
+              pieStartAngle: 0,
+              pieHole: 0.85,
+              backgroundColor: 'transparent',
+              pieSliceBorderColor: 'lightgrey',
+              slices: {
+                  0: { color: 'lightgrey', },
+                  1: { color: '#D71920' },
+              },
+              tooltip: {
+                  text: 'percentage',
+                  trigger: 'none'
+              },
+              chartArea: {width:'85%', height:'85%'},
+          };
+
+          var chart = new google.visualization.PieChart(document.getElementById('LiberalChart'));
+          chart.draw(data, options);
+      }
+
+      function drawGreenChart() {
+          var data = google.visualization.arrayToDataTable([
+              ['Party', 'Percentage'],
+              ['',      64],
+              ['Green',     36],
+          ]);
+
+          var options = {
+              legend: 'none',
+              pieSliceText: 'none',
+              pieStartAngle: 0,
+              pieHole: 0.85,
+              backgroundColor: 'transparent',
+              pieSliceBorderColor: 'lightgrey',
+              slices: {
+                  0: { color: 'lightgrey', },
+                  1: { color: '#2F873E' },
+              },
+              tooltip: {
+                  text: 'percentage',
+                  trigger: 'none'
+              },
+              chartArea: {width:'85%', height:'85%'},
+          };
+
+          var chart = new google.visualization.PieChart(document.getElementById('GreenChart'));
+          chart.draw(data, options);
+      }
+
+      function drawConservativeChart() {
+          var data = google.visualization.arrayToDataTable([
+              ['Party', 'Percentage'],
+              ['',      77],
+              ['Conservative',     23],
+          ]);
+
+          var options = {
+              legend: 'none',
+              pieSliceText: 'none',
+              pieStartAngle: 0,
+              pieHole: 0.85,
+              backgroundColor: 'transparent',
+              pieSliceBorderColor: 'lightgrey',
+              slices: {
+                  0: { color: 'lightgrey', },
+                  1: { color: '#333399' },
+              },
+              tooltip: {
+                  text: 'percentage',
+                  trigger: 'none'
+              },
+              chartArea: {width:'85%', height:'85%'},
+          };
+
+          var chart = new google.visualization.PieChart(document.getElementById('ConservativeChart'));
+          chart.draw(data, options);
+      }
+
+      function drawfriend1Chart() {
+          var data = google.visualization.arrayToDataTable([
+              ['Party', 'Percentage'],
+              ['',      28],
+              ['Liberatarian',     72],
+          ]);
+
+          var options = {
+              legend: 'none',
+              pieSliceText: 'none',
+              pieStartAngle: 0,
+              pieHole: 0.85,
+              backgroundColor: 'transparent',
+              pieSliceBorderColor: 'lightgrey',
+              slices: {
+                  0: { color: 'lightgrey', },
+                  1: { color: 'blue' },
+              },
+              tooltip: {
+                  text: 'percentage',
+                  trigger: 'none'
+              },
+              chartArea: {width:'85%', height:'85%'},
+          };
+
+          var chart = new google.visualization.PieChart(document.getElementById('Friend1Chart'));
+          chart.draw(data, options);
+      }
+
+      function drawfriend2Chart() {
+          var data = google.visualization.arrayToDataTable([
+              ['Party', 'Percentage'],
+              ['',      41],
+              ['Liberatarian',     59],
+          ]);
+
+          var options = {
+              legend: 'none',
+              pieSliceText: 'none',
+              pieStartAngle: 0,
+              pieHole: 0.85,
+              backgroundColor: 'transparent',
+              pieSliceBorderColor: 'lightgrey',
+              slices: {
+                  0: { color: 'lightgrey', },
+                  1: { color: 'blue' },
+              },
+              tooltip: {
+                  text: 'percentage',
+                  trigger: 'none'
+              },
+              chartArea: {width:'85%', height:'85%'},
+          };
+
+          var chart = new google.visualization.PieChart(document.getElementById('Friend2Chart'));
+          chart.draw(data, options);
+      }
+
+      function drawfriend3Chart() {
+          var data = google.visualization.arrayToDataTable([
+              ['Party', 'Percentage'],
+              ['',      38],
+              ['Liberatarian',     62],
+          ]);
+
+          var options = {
+              legend: 'none',
+              pieSliceText: 'none',
+              pieStartAngle: 0,
+              pieHole: 0.85,
+              backgroundColor: 'transparent',
+              pieSliceBorderColor: 'lightgrey',
+              slices: {
+                  0: { color: 'lightgrey', },
+                  1: { color: 'blue' },
+              },
+              tooltip: {
+                  text: 'percentage',
+                  trigger: 'none'
+              },
+              chartArea: {width:'85%', height:'85%'},
+          };
+
+          var chart = new google.visualization.PieChart(document.getElementById('Friend3Chart'));
+          chart.draw(data, options);
+      }
+
+      function drawfriend4Chart() {
+          var data = google.visualization.arrayToDataTable([
+              ['Party', 'Percentage'],
+              ['',      41],
+              ['Green',     59],
+          ]);
+
+          var options = {
+              legend: 'none',
+              pieSliceText: 'none',
+              pieStartAngle: 0,
+              pieHole: 0.85,
+              backgroundColor: 'transparent',
+              pieSliceBorderColor: 'lightgrey',
+              slices: {
+                  0: { color: 'lightgrey', },
+                  1: { color: '#2F873E' },
+              },
+              tooltip: {
+                  text: 'percentage',
+                  trigger: 'none'
+              },
+              chartArea: {width:'85%', height:'85%'},
+          };
+
+          var chart = new google.visualization.PieChart(document.getElementById('Friend4Chart'));
+          chart.draw(data, options);
+      }
+  </script>
+
+</head>
+
+<body>
+
+<div class="large-8 medium-10 small-10" style="margin: auto; margin-top: 2rem;">
+
+
+    <div class="large-12 medium-12 small-12" style="margin-top: 0rem;">
+      <ul class="pricing-table active-tb shadow mrgn-20-top">
+        <li class="title">Current Surveys</li>
+        <li class="bullet-item" style="text-align: left;">
+          <img src="http://www.clker.com/cliparts/u/e/E/I/2/i/dark-green-check-mark-hi.png" style="width: 2rem; height: auto;  ">
+          <b>Completed:</b> Political Survey for the 2015 Federal Election</br>
+          <span style="margin-left: 2rem;">&nbsp;You have no new surveys to complete.</span></p>
+        </li>
+
+      </ul>
+    </div>
+
+    <div class="large-12" style="margin-top: 2rem;">
+      <ul class="pricing-table active-tb shadow mrgn-20-top">
+        <li class="title">My Recent Survey Results</li>
+        <li class="bullet-item">
+          <div style="width: 100%;">
+            <h5 style ="padding: 5px; border: 1px solid black; width: 50%; margin: auto;">Political Survey for the 2015 Federal Election</h5>
+            <ul class="small-block-grid-3" style="z-index: -1">
+              <li style="margin-top:2em;">
+                <div style="width: 100%; height: 250px; float: left; margin-left: 10%;">
+                  <div style="width: 25%; height: 47%; position: relative; float: left; margin-left: 15%;">
+                    <p style="width: 100%; height: 100%; z-index: 1; position: absolute; text-align: center; margin-top: 52%; font-size: 26px;"><b>54%</b></p>
+                    <div id="NDPChart" style="width: 100%; height: 100%; position: absolute;"></div>
+                    <p style="font-size: 14px; position: absolute; margin-top: 115%; margin-left: 35%;">NDP</p>
+                  </div>
+
+                  <div style="width: 25%; height: 47%; position: relative; margin-left: 50%;">
+                    <p style="width: 100%; height: 100%; z-index: 1; position: absolute; text-align: center; margin-top: 52%; font-size: 26px;"><b>48%</b></p>
+                    <div id="LiberalChart" style="width: 100%; height: 100%; position: absolute;"></div>
+                    <p style="font-size: 14px; position: absolute; margin-top: 115%; margin-left: 30%;">Liberal</p>
+                  </div>
+
+                  <div style="width: 25%; height: 47%; position: relative; float: left; margin-left: 15%; margin-top: 1%;">
+                    <p style="width: 100%; height: 100%; z-index: 1; position: absolute; text-align: center; margin-top: 52%; font-size: 26px;"><b>36%</b></p>
+                    <div id="GreenChart" style="width: 100%; height: 100%; position: absolute;"></div>
+                    <p style="font-size: 14px; position: absolute; margin-top: 115%; margin-left: 30%;">Green</p>
+                  </div>
+
+                  <div style="width: 25%; height: 47%; position: relative; margin-left: 50%; margin-top: 1%;">
+                    <p style="width: 100%; height: 100%; z-index: 1; position: absolute; text-align: center; margin-top: 52%; font-size: 26px;"><b>23%</b></p>
+                    <div id="ConservativeChart" style="width: 100%; height: 100%; position: absolute;"></div>
+                    <p style="font-size: 14px; position: absolute; margin-top: 115%; margin-left: 10%;">Conservative</p>
+                  </div>
+
+                </div>
+              </li>
+
+              <li>
+                <div style="font-size: 0.75rem; line-height: 1rem; margin-top:2em;">
+                  Your views align most closely with:<br>
+                  <div style="width: 50%; height: 40%; position: relative; margin-left: 25%; float: left; margin-top: -5%;">
+                    <p style="width: 100%; height: 100%; z-index: 1; position: absolute; text-align: center; margin-top: 43%; font-size: 50px;"><b>76%</b></p>
+                    <div id="BigChart" style="width: 100%; height: 100%; position: absolute;"></div>
+                  </div>
+                  <h5 style="text-shadow: 1px 1px 1px #fff, 1px 1px 0px #000; margin-top: 48%;">Liberatarian</h5>
+                  <span style="text-align: center;">See completed survey. </br><a href="#">Review results >></a></span>
+                </div>
+              </li>
+
+              <li style="margin-top: 3em; font-size: 0.75rem;">
+                You align on the following issues:</br></br>
+                <ul style="font-size: 0.9rem; border: 1px solid #7a7a7a;">
+                  <li style="border-bottom: 1px solid #7a7a7a; padding: 0.5rem 0;"><a href="#">Combatting Climate Change</a></li></br>
+                  <li style="border-bottom: 1px solid #7a7a7a; padding: 0 0 0.5rem 0;"><a href="#">Combatting Terrorist Threats</a></li></br>
+                  <li style="border-bottom: 1px solid #7a7a7a; padding: 0 0 0.5rem 0;"><a href="#">Employment and Skills Training</a></li></br>
+                  <li style="padding: 0 0 0.5rem 0;"><a href="#">Post-Secondary Education</a></li>
+                </ul>
+              </li>
+            </ul>
+
+
+          </div>
+        </li>
+      </ul>
+    </div>
+
+
+
+    <div class="large-12" style="margin-top: 2rem;">
+      <ul class="pricing-table active-tb shadow mrgn-20-top">
+        <li class="title">Recently Added Friends (4)</li>
+        <li class="bullet-item" style="padding-bottom: 5%;">
+          <div style="float: left; width: 40%;">
+                            <span class="friend-pic">
+                                <img src="http://ccdn.hiphopdx.com/2012/08/1-Waka_Flocka-MMG-hhdx-300x300.jpg" />
+                                <span class="friend-pic">
+                                    <b>Waka Flocka Flame</b></br>
+                                  <span style="color: green">VERY SIMILAR</span>
+                                  </br>72% Liberatarian
+                                </span>
+                            <div style="width: 20%; height: 10%; position: relative; margin-left: 100%; margin-top: -38%;">
+                              <p style="width: 100%; height: 100%; z-index: 1; position: absolute; text-align: center; margin-top: 100%; font-size: 26px;"><b>72%</b></p>
+                              <div id="Friend1Chart" style="width: 100%; height: 100%; position: absolute;"></div>
+                            </div>
+                            </span>
+          </div>
+          <div style="width: 40%; margin-left: 50%;">
+                            <span class="friend-pic">
+                                <img src="http://cdn.watchloud.com/wp-content/uploads/2014/07/whodat-waka-flocka-flame.jpg" />
+                                <span class="friend-pic">
+                                    <b>Waka Flocka Flame</b></br>
+                                  <span style="color: cornflowerblue">SIMILAR</span>
+                                  </br>59% Liberatarian
+                                </span>
+                            <div style="width: 20%; height: 10%; position: relative; margin-left: 100%; margin-top: -38%;">
+                              <p style="width: 100%; height: 100%; z-index: 1; position: absolute; text-align: center; margin-top: 100%; font-size: 26px;"><b>59%</b></p>
+                              <div id="Friend2Chart" style="width: 100%; height: 100%; position: absolute;"></div>
+                            </div>
+                            </span>
+          </div>
+        </li>
+        <li class="bullet-item" style="padding-bottom: 8%;">
+          <div style="width: 40%; float: left;">
+                            <span class="friend-pic">
+                                <img src="http://ccdn.hiphopdx.com/2012/08/1-Waka_Flocka-MMG-hhdx-300x300.jpg" />
+                                <span class="friend-pic">
+                                    <b>Waka Flocka Flame</b></br>
+                                  <span style="color: green">VERY SIMILAR</span>
+                                  </br>62% Liberatarian
+                                </span>
+                            <div style="width: 20%; height: 10%; position: relative; margin-left: 100%; margin-top: -38%;">
+                              <p style="width: 100%; height: 100%; z-index: 1; position: absolute; text-align: center; margin-top: 100%; font-size: 26px;"><b>62%</b></p>
+                              <div id="Friend3Chart" style="width: 100%; height: 100%; position: absolute;"></div>
+                            </div>
+                            </span>
+          </div>
+          <div style="width: 40%; margin-left: 50%;">
+                            <span class="friend-pic">
+                                <img src="http://cdn.watchloud.com/wp-content/uploads/2014/07/whodat-waka-flocka-flame.jpg" />
+                                <span class="friend-pic">
+                                    <b>Waka Flocka Flame</b></br>
+                                  <span style="color: orange">NOT SIMILAR</span>
+                                  </br>59% Liberatarian
+                                </span>
+                            <div style="width: 20%; height: 10%; position: relative; margin-left: 100%; margin-top: -38%;">
+                              <p style="width: 100%; height: 100%; z-index: 1; position: absolute; text-align: center; margin-top: 100%; font-size: 26px;"><b>59%</b></p>
+                              <div id="Friend4Chart" style="width: 100%; height: 100%; position: absolute;"></div>
+                            </div>
+                            </span>
+          </div>
+    </div>
+    </li>
+
+    </ul>
+</div>
+
+
+
+
+</div>
+
+</html>

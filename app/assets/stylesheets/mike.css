@@ -1,0 +1,736 @@
+/*Create a team CSS stuff - Mike*/
+
+#bigscreen
+{
+    width: 1000px;
+    height: 700px;
+    border: 1px solid black;
+    background-color: white;
+    margin: 0 auto;
+    color: black;
+    padding: 15px;
+    overflow-x: auto;
+    overflow-y: auto;
+}
+
+#biggscreen
+{
+    width: 1000px;
+    height: 700px;
+    border: 1px solid black;
+    border-left: none;
+    background-color: white;
+    margin: -350px 0 0 -500px;
+    color: black;
+    padding: 15px;
+    overflow-x: auto;
+    overflow-y: auto;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+}
+
+#photo
+{
+    width: 150px;
+    height: 150px;
+    border: 1px solid black;
+    color: black;
+    margin-left: 20px;
+    margin-top: 20px;
+    float: left;
+}
+
+#placeholder
+{
+    margin-left: 40px;
+    margin-top: 60px;
+}
+
+.middle
+{
+    margin-left: 200px;
+    margin-bottom: 25px;
+}
+
+.fields
+{
+    width: 700px;
+    margin-bottom: 10px;
+}
+
+#description
+{
+    height: 250px;
+}
+
+#UW
+{
+    margin-left: 200px;
+}
+
+#firstCol
+{
+    float: left;
+    display: table;
+    margin: 10px;
+}
+
+.teamDesc
+{
+    text-align: center;
+    margin: auto;
+    display: block;
+}
+
+.teamphd
+{
+    width: 220px;
+    height: 40px;
+}
+
+.teamimg
+{
+    width: 100px;
+    height: 100px;
+    margin: auto;
+    margin-bottom: 10px;
+    display: block;
+    border: 1px solid black;
+}
+
+#otherCol
+{
+    display: table;
+    margin: 10px;
+    float: left;
+}
+
+.joinTeamPosition
+{
+    margin-left: 50px;
+    margin-bottom: 15px;
+}
+
+#mikenavbar
+{
+    height: 620px;
+    margin-left: 365px;
+    margin-top: 5px;
+    float: left;
+}
+
+#mikenavbar #holder
+{
+    width: 162px;
+    height: 673px;
+    border-right: 1px solid black;
+    padding-top: 60px;
+}
+
+#mikenavbar #holder ul
+{
+    list-style: none;
+    margin:0;
+    padding: 0;
+}
+
+#mikenavbar #holder ul li a
+{
+    text-decoration: none;
+    margin-right: 5px;
+    color: black;
+    border: 1px solid black;
+    padding: 20px;
+    width: 120px;
+    display: block;
+    background: grey;
+}
+
+#mikenavbar #holder ul li a:hover
+{
+    background: green;
+    color: white;
+    text-shadow: 1px 1px 1px black;
+}
+
+#holder ul li a#onlink
+{
+    background: green;
+    color: black;
+    boder-right: 1px solid white;
+}
+
+#holder ul li a#onlink:hover
+{
+    background: white;
+    color: blue;
+    text-shadow: 1px 1px 1px black;
+}
+
+.leftSide
+{
+    float: left;
+    width: 300px;
+    height: 700px;
+}
+
+.inbetween
+{
+    float: left;
+    width: 300px;
+    height: 700px;
+}
+
+.rightSide
+{
+    float: left;
+}
+
+#pcHolder
+{
+    height: 200px;
+    width: 260px;
+    margin: auto;
+    border: 1px solid black;
+}
+
+#membersTitle
+{
+    border-bottom: 1px solid black;
+    width: 368px;
+    height: 50px;
+}
+
+#membersTitle h2
+{
+    margin: auto;
+    text-align: center;
+}
+
+.leftSide p
+{
+    margin-left: 35px;
+}
+
+#recentActivity
+{
+    margin: auto;
+    height: 280px;
+    width: 260px;
+    border: 1px solid black;
+}
+
+#VSteam
+{
+    height: 80px;
+    width: 260px;
+    margin: auto;
+    border: 1px solid black;
+}
+
+#wall
+{
+    width: 260px;
+    height: 667px;
+    border: 1px solid black;
+    margin: 10px;
+}
+
+#wall div h3
+{
+    margin: auto;
+    text-align: center;
+}
+
+#wallTitle
+{
+    height: 50px;
+    border-bottom: 1px solid black;
+}
+
+#wall div table tr td
+{
+    padding: 20px;
+}
+
+#wall div table
+{
+    border: 1px solid black;
+    margin-left: 15px;
+    margin-top: 15px;
+}
+
+#wall div textarea
+{
+    height: 80px;
+    width: 221px;
+    margin-left: 15px;
+}
+
+.wallPost
+{
+    border: 1px solid black;
+    margin-left: 15px;
+    height: 180px;
+    width: 225px;
+    margin-top: 25px;
+}
+
+#membersBox
+{
+    width: 368px;
+    height: 667px;
+    border: 1px solid black;
+    margin-top: 10px;
+}
+
+#status
+{
+    float: left;
+    margin-left: 250px;
+}
+
+#statusStatus
+{
+    margin-top: 33px;
+    margin-left: 600px;
+}
+
+#statusQuestion
+{
+    boder: 1px solid black;
+    margin-left: 320px;
+    margin-right: 350px;
+}
+
+#statusQtext
+{
+    text-align: center;
+}
+
+#trendingTable
+{
+    margin-left: 150px;
+    margin-top: 25px;
+    border: 1px solid black;
+    width: 850px;
+    height: 150px;
+    padding: 10px;
+}
+
+#ttCaption
+{
+    text-align: left;
+    font-size: 22px;
+}
+
+.lmSpacing
+{
+    margin-left: 200px;
+}
+
+.ttElement1
+{
+    width: 270px;
+    boder: 1px solid black;
+}
+
+.ttElement2
+{
+    width: 50px;
+}
+
+#lonf
+{
+    float: left;
+    margin-left: 10px;
+    margin-right: 20px;
+    margin-top: 30px;
+    width: 120px;
+    height: 340px;
+}
+
+#smallNF
+{
+    width: 700px;
+    height: 320px;
+    margin-top: 30px;
+}
+
+.adsTitle
+{
+    text-align: center;
+    margin: 10px;
+    margin-top: none;
+}
+
+.adsBlock
+{
+    width: 118px;
+    height: 118px;
+    border: 1px solid black;
+}
+
+#topAd
+{
+    margin-bottom: 32px;
+}
+
+.nfpost
+{
+    margin-left: 100px;
+    border: 1px solid black;
+    padding-left: 30px;
+    padding: 10px;
+    margin-bottom:15px;
+    height: 70px;
+}
+
+#navbarr
+{
+    background-color: #2E2F30;
+    width: 100%;
+    height: 65px;
+    text-align: center;
+}
+
+.navbarr-elem:hover
+{
+    background: #EEE;
+    color: #2E2F30;
+    text-shadow: 1px 1px 1px black;
+}
+
+.navbarr-elem
+{
+    display: inline-block;
+    background-color: #2E2F30;
+    color: white;
+    padding: 15px;
+    line-height: 15px;
+}
+
+#search-bar
+{
+    display: inline-block;
+    background-color: #2E2F30;
+    color: white;
+    height: 38px;
+    width: 265px;
+    padding-top: 15px;
+}
+
+#survey-header
+{
+    background-color: aliceblue;
+    padding-left: 40px;
+    padding-top: 25px;
+    padding-bottom: 15px;
+}
+
+.surveyQsection
+{
+    height: 180px;
+}
+
+.Qimportance
+{
+    text-align: center;
+    height: 100%;
+    padding-top:20px;
+}
+
+.surveyQuestion
+{
+    float: left;
+    width: 70%;
+    padding-left: 30px;
+}
+
+.checkboxes
+{
+    list-style: none;
+}
+
+.split.button {
+
+    width: 50%; }
+
+.split.button.facebook {
+
+    background: #3b5998;
+
+    text-transform: uppercase; }
+
+.split.button.facebook span {
+
+    background: #2d4373; }
+
+.split.button.facebook span:after {
+
+    border: none;
+
+    font-family: "foundation-icons";
+
+    content: "\f1c4";
+
+    font-size: 2rem;
+
+    line-height: 0.25rem;
+
+    margin-left: -0.7rem; }
+
+.split.button.twitter {
+
+    background: #55acee;
+
+    text-transform: uppercase; }
+
+.split.button.twitter span {
+
+    background: #2795e9; }
+
+.split.button.twitter span:after {
+
+    border: none;
+
+    font-family: "foundation-icons";
+
+    content: "\f1e4";
+
+    font-size: 2rem;
+
+    line-height: 0.25rem;
+
+    margin-left: -0.7rem; }
+
+.split.button.google {
+
+    background: #d50f25;
+
+    text-transform: uppercase; }
+
+.split.button.google span {
+
+    background: #a50c1d; }
+
+.split.button.google span:after {
+
+    border: none;
+
+    font-family: "foundation-icons";
+
+    content: "\f1ca";
+
+    font-size: 2rem;
+
+    line-height: 0.25rem;
+
+    margin-left: -0.7rem; }
+
+.split.button.left-icon {
+
+    text-align: right; }
+
+.split.button.left-icon span {
+
+    left: 0; }
+
+.home-friends-phd
+{
+    width: 80px; height: 80px; margin: 15px; float: left; display: table; background-color: black;
+}
+
+input[data-toggle] {
+
+    display: none; }
+
+input[data-toggle]:checked + label,
+
+input[data-toggle]:checked + label:active {
+
+    background-color: grey;
+
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.15) inset, 0 1px 2px rgba(0, 0, 0, 0.05); }
+
+.button-group.toggle li:not(first-child) {
+
+    margin: 0 -0.9rem; }
+
+.middle
+{
+    margin-left: 200px;
+    margin-bottom: 25px;
+}
+
+.fields
+{
+    width: 200px;
+    margin-top: 10px;
+}
+
+#photo
+{
+    width: 150px;
+    height: 150px;
+    border: 1px solid black;
+    color: black;
+    margin-left: 20px;
+    margin-top: 20px;
+    float: left;
+}
+
+.read-more-state {
+    display: none;
+}
+
+.read-more-target {
+    opacity: 0;
+    max-height: 0;
+    font-size: 0;
+    transition: .25s ease;
+}
+
+.read-more-state:checked ~ .read-more-wrap .read-more-target {
+    opacity: 1;
+    font-size: inherit;
+    max-height: 999em;
+}
+
+.read-more-state ~ .read-more-trigger:before {
+    content: 'Read more';
+}
+
+.read-more-state:checked ~ .read-more-trigger:before {
+    content: 'Read less';
+}
+
+.read-more-trigger {
+    cursor: pointer;
+    display: inline-block;
+    padding: 0 .5em;
+    color: black;
+    font-size: .9em;
+    line-height: 2;
+    color: white;
+    background: #D83431;
+    border: 1px solid #D83431;
+    border-radius: .25em;
+    position: relative;
+    left: 0;
+}
+
+#read-more-text {
+    padding: 1em;
+    background-image: -webkit-repeating-radial-gradient(center center, rgba(0,0,0,.2), rgba(0,0,0,.2) 1px, transparent 1px, transparent 100%);
+    background-image: -moz-repeating-radial-gradient(center center, rgba(0,0,0,.2), rgba(0,0,0,.2) 1px, transparent 1px, transparent 100%);
+    background-image: -ms-repeating-radial-gradient(center center, rgba(0,0,0,.2), rgba(0,0,0,.2) 1px, transparent 1px, transparent 100%);
+    background-image: repeating-radial-gradient(center center, rgba(0,0,0,.2), rgba(0,0,0,.2) 1px, transparent 1px, transparent 100%);
+    -webkit-background-size: 3px 3px;
+    -moz-background-size: 3px 3px;
+    background-size: 3px 3px;
+    color: black;
+    width: 100%;
+    text-align: justify;
+    font-size:0.8em;
+}
+
+/*profile.scss*/
+
+.political-measure{
+    margin: auto;
+    -moz-border-radius: 50%;
+    -webkit-border-radius: 50%;
+    border-radius: 50%;
+    background: transparent;
+    box-shadow: 2px 2px 4px rgba(0,0,0,0.5), inset 2px 2px 4px rgba(0,0,0,.5);
+    -webkit-box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5), inset 2px 2px 4px rgba(0,0,0,.5);
+    -moz-box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5), inset 2px 2px 4px rgba(0,0,0,.5);
+    text-shadow: 2px 2px 1px #fff, 2px 2px 2px #000;
+    display: inline-block;
+
+}
+.big{
+    width: 7.5rem;
+    height: 7.5rem;
+    border: 0.5rem solid blue;
+    font-size: 2.5rem;
+    line-height: 1.5rem;
+}
+
+.small{
+    width: 5rem;
+    height: 5rem;
+    border: 0.4rem solid;
+    font-size: 1.5rem;
+    line-height: 1.2rem;
+    margin-bottom:2rem;
+}
+
+.smallest{
+    width: 4.5rem;
+    height: 4.5rem;
+    border: 0.4rem solid;
+    font-size: 1.2rem;
+    line-height: 1.3rem;
+    text-align: center;
+}
+
+.friend-pic{
+    font-size: 0.8rem;
+    line-height:1.2rem;
+    display: inline-block;
+}
+
+.friend-pic span{
+    vertical-align: middle;
+    text-align: left;
+    margin-right: 1rem;
+    width:10rem;
+}
+
+.friend-pic img{
+    width: 7rem;
+    height: auto;
+    border-radius: 5%;
+    -moz-border-radius: 5%;
+    -webkit-border-radius: 5%;
+    margin-right: 0.5rem;
+}
+
+button.tiniest, .button.tiniest{
+    padding:0.225rem 0.5rem 0.225rem 0.5rem;
+    vertical-align: .05rem;
+    font-size:0.7rem;
+    background-color: white;
+    border: 1px solid #eee;
+    box-shadow: 0 0 1px #000000 inset;
+    color: #727272;}
+
+#searchBox {
+    background: #fff;
+    border: 1px solid #eee;
+    box-shadow: 0 0 1px #000000 inset;
+    color: #1f1f1f;
+    font-size: 0.8rem;
+    height:1.7rem;
+    padding: .2rem .2rem .2rem 1.5rem;
+    width: 15rem;
+    display: inline-block;
+    margin-left:.5rem;
+}
+
+#partyStances{
+    background-image: -webkit-repeating-radial-gradient(center center, rgba(0,0,0,.2), rgba(0,0,0,.2) 1px, transparent 1px, transparent 100%);
+    background-image: -moz-repeating-radial-gradient(center center, rgba(0,0,0,.2), rgba(0,0,0,.2) 1px, transparent 1px, transparent 100%);
+    background-image: -ms-repeating-radial-gradient(center center, rgba(0,0,0,.2), rgba(0,0,0,.2) 1px, transparent 1px, transparent 100%);
+    background-image: repeating-radial-gradient(center center, rgba(0,0,0,.2), rgba(0,0,0,.2) 1px, transparent 1px, transparent 100%);
+    -webkit-background-size: 3px 3px;
+    -moz-background-size: 3px 3px;
+    background-size: 3px 3px;
+    width: 80%;
+    height: auto;
+    padding:1rem;
+    margin: auto;
+}
