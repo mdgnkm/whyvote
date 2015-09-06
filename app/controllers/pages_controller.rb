@@ -21,11 +21,11 @@ class PagesController < ApplicationController
   end
 
   def friend_dashboard
-    render "pages/friend-dashboard.html"
+    render "pages/friend-dashboard.html.erb"
   end
 
   def stranger_dashboard
-    render "pages/stranger-dashboard.html"
+    render "pages/stranger-dashboard.html.erb"
   end
 
   def about_team

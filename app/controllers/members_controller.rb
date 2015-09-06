@@ -62,7 +62,7 @@ class MembersController < ApplicationController
   end
 
   def dashboard
-    render 'members/dashboard.html'
+    render 'members/dashboard.html.erb'
   end
 
   def no_info_dashboard
