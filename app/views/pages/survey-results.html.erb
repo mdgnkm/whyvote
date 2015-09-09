@@ -10,47 +10,6 @@
           $("#partyPic5").hide();
           $("#partyStances").hide();
 
-          $("#partyColour1").mouseover(function(){
-              $("#partyPic1").show();
-              $("#partyChoice1").hide();
-          });
-          $("#partyColour1").mouseout(function(){
-              $("#partyPic1").hide();
-              $("#partyChoice1").show();
-          });
-          $("#partyColour2").mouseover(function(){
-              $("#partyPic2").show();
-              $("#partyChoice2").hide();
-          });
-          $("#partyColour2").mouseout(function(){
-              $("#partyPic2").hide();
-              $("#partyChoice2").show();
-          });
-          $("#partyColour3").mouseover(function(){
-              $("#partyPic3").show();
-              $("#partyChoice3").hide();
-          });
-          $("#partyColour3").mouseout(function(){
-              $("#partyPic3").hide();
-              $("#partyChoice3").show();
-          });
-          $("#partyColour4").mouseover(function(){
-              $("#partyPic4").show();
-              $("#partyChoice4").hide();
-          });
-          $("#partyColour4").mouseout(function(){
-              $("#partyPic4").hide();
-              $("#partyChoice4").show();
-          });
-          $("#partyColour5").mouseover(function(){
-              $("#partyPic5").show();
-              $("#partyChoice4").hide();
-          });
-          $("#partyColour5").mouseout(function(){
-              $("#partyPic5").hide();
-              $("#partyChoice4").show();
-          });
-
           var expanded = false;
           $("#partyStanceButton").click(function()
           {
@@ -76,15 +35,13 @@
 
 
 <div class="large-8 medium-8" style="margin: auto;">
-  <fieldset style="border: 1px solid black; padding: none;">
-    <legend>SURVEY RESULTS</legend>
+
     <div class="large-12" style="margin-top: 0rem;">
       <ul class="pricing-table active-tb shadow mrgn-20-top">
         <li class="title">My Survey Results</li>
         <li class="bullet-item">
           <div style="width: 100%; ">
-            <h5>Political Survey for the 2015 Federal Election</h5>
-            <hr style="width: 45%; margin: auto; border-color: black;">
+            <h6 style="width: 50%;padding: 1rem; background-color:#eee;">Political Survey for the  2015 Election</h6>
 
             <ul class="small-block-grid-3">
               <li>
@@ -160,14 +117,18 @@
       <ul class="pricing-table active-tb shadow mrgn-20-top">
         <li class="title">Which political party do you align with the most?</li>
         <li class="bullet-item">
+          <h6 style="width: 50%;padding: 1rem; background-color:#eee;">Political Survey for the  2015 Election</h6>
+          Below is a history of your results. Click on the Party Stances to learn more.</br>
+          <h6 style="width: 40%;padding: 1rem; background-color: #7e7e7e; color: white; position: absolute; left: 0;">Foreign Affairs</h6>
+          </br></br></br>
           <h4>
                         	<span style="font-size:2rem; text-shadow: 1px 1px 0 #fff, 2px 2px 0 #999;">1   
                         	</span>
             Should Canada keep troops in Iraq for the anti-ISIS mission?
           </h4>
-          <button id="partyStanceButton" style="margin-left:-60%;">
-            View Party Stances
-          </button>
+          <h6 id="partyStanceButton" style="margin-left:-60%; cursor: pointer">
+            > Party Stances
+          </h6>
 
           <div id="partyStances">
             <div class="liberal clearfix" style="margin-bottom:1.2rem;">
@@ -250,7 +211,6 @@
 
               <div class="small-10 right" style="text-align: justify;">
 
-                <img id="partyPic2" src="http://www.spirit-wrestlers.com/photos/2006_Our_Way_Home/NDP_logo.gif" style="height: 3.1rem; padding: 0.6rem; margin-top: 0rem;">
                 <label class="button" id="partyChoice2" style="width: 100%; background: #D83431; text-align: left;">
                   No, we should pull all troops out but we should continue to provide humanitarian aid
                 </label>
@@ -298,7 +258,7 @@
         </li>
       </ul>
     </div>
-  </fieldset>
+
 </div>
 
 
