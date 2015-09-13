@@ -1,6 +1,6 @@
 module SurveysHelper
   def get_answer_fields(attempt)
-    attempt.survey.questions.map { |q| Answer.new(question_id: q.id) }
+    attempt.survey.questions.order(:id).map { |q| Answer.new(question_id: q.id) }
   end
 
   def attempt_scope(resource)
