@@ -1,3 +1,153 @@
+
+<head>
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+
+
+  <script>
+      $(document).ready(function(){
+          $("#read-more-target, #read-more-text").hide();
+          var expanded = false;
+          $("#moveButton").click(function()
+          {
+              console.log(101);
+              if (!expanded)
+              {
+                  $("#translation").animate({'marginTop' : '0px'}, {duration : 500});
+                  $("#read-more-target, #read-more-text").show(500);
+                  expanded = true;
+              }
+              else
+              {
+                  $("#translation").animate({'marginTop' : '0'}, {duration : 500});
+                  $("#read-more-target, #read-more-text").hide(500);
+                  expanded = false;
+              }
+          });
+      });
+  </script>
+
+  <title>Survey Page</title>
+</head>
+
+<body>
+
+<div class="large-8 medium-8" style="margin: auto; margin-top: 2rem;">
+  <fieldset style="border: none; padding: none;">
+    <legend>SURVEY</legend>
+    <div class="large-12 columns">
+      <ul class="pricing-table active-tb shadow mrgn-20-top" style="margin-top:3rem;">
+        <li class="title">Which political party do you align with most?</li>
+        <li class="bullet-item">
+          <div style="text-align: left; width: 80%; margin: auto; line-height:1.3rem;">
+            <h6 style="padding: 1rem; background-color:#eee;">Political Survey for the  2015 Election</h6>
+            We took 5 topics that a sample of University of Waterloo students said were most relevant to them and
+            compiled it into one survey. At the end of the survey, our algorithm will help you determine where you
+            stand politically. This is by no means a comprehensive listing of all political issues –
+            thus if you would like to learn more, visit the party websites as listed below.
+            </br></br>
+            The topics include:</br></br>
+            - Electoral/Voting Systems
+            </br>
+            - Climate Change
+            </br>
+            - Foreign Affairs
+            </br>
+            - Post Secondary Education
+            </br>
+            - Economy</br></br></br>
+          </div>
+          <h4 style="background: #ccc; display: inline-block; padding: 0.5rem 1rem 0.5rem 6rem; text-align: right; position: absolute; left: 0; box-shadow:0px 1px 0px 1px grey; text-shadow: 1px 1px 0 #fff, 2px 2px 0 #999;">Military Issues</h4></br>
+        </li>
+        <li class="bullet-item">
+
+
+          <%= form_for(@attempt, url: attempt_scope(@attempt)) do |f| %>
+              <%= hidden_field_tag :survey_id, @survey.id %>
+              <ol class="questions" style="width: 80%; margin: auto; text-align: left;">
+                <%= f.fields_for :answers, get_answer_fields(@attempt) do |answer_fields| %>
+                    <li>
+                      <% question = answer_fields.object.question %>
+                      <h4 class="question"><%= question.text %></h4>
+                      <input type="checkbox" class="read-more-state" id="post-1"/>
+                      <label id="moveButton" class="read-more-trigger" style="position: relative; margin-left: -85%;"></label
+                        <p class="read-more-wrap" id="read-more-text">
+                          <span class="read-more-target">
+                            <p class="question"><%= question.description %></p>
+                          </span>
+                        </p>
+                      <% if question.format == 'selection' %>
+                          <ul class="options">
+                            <%= collection_radio_buttons('attempt[answers_attributes]', question.id, question.options, :id, :text) do |b| %>
+                                <li class="radio">
+                                  <%= b.label { b.radio_button + b.text } %>
+                                </li>
+                            <% end %>
+                          </ul>
+                      <% end %>
+                    </li>
+                <% end -%>
+              </ol>
+              <%= f.submit "Submit", class: 'btn btn-default' %>
+          <% end -%>
+
+
+
+
+
+
+
+
+
+            <div class="large-2 middle-2 columns" style="vertical-align: middle; margin-left: -1rem;">
+              <h5>Importance:</h5>
+            </div>
+            <div class="large-10 middle-10 columns" style="vertical-align: middle;">
+              <input type="radio" id="importance1" name="answer">
+              <label for="importance1" style="font-size:1rem;">1</label>
+              <input type="radio" id="importance2" name="answer">
+              <label for="importance2" style="font-size:1rem;">2</label>
+              <input type="radio" id="importance3" name="answer">
+              <label for="importance3" style="font-size:1rem;">3</label>
+              <input type="radio" id="importance4" name="answer">
+              <label for="importance4" style="font-size:1rem;">4</label>
+              <input type="radio" id="importance5" name="answer">
+              <label for="importance5" style="font-size:1rem;">5</label>
+              <br> 1=least, 5=most<br><br>
+            </div>
+
+        </li>
+        <li class="bullet-item clearfix">
+          <div class="large-5 medium-11 small-12 right">
+            <select style="width:50%;">
+              <option>Share results with</option>
+              <option>Public</option>
+              <option>Friends</option>
+              <option>Only Me</option>
+            </select>
+            <button style="width: 35%;">
+              Show Results
+            </button>
+          </div>
+        </li>
+      </ul>
+    </div>
+  </fieldset>
+</div>
+</body>
+
+
+
+
+
+
+
+
+
+
+
+
+
 <h2 class="survey-title">
   <%= @survey.name %>
   <p><small><%= @attempt.survey.description %></small></p>
